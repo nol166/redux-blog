@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux'
+import postReducer from './postReducer'
 
 export default combineReducers({
-    replaceMe: () => {
-        // adding this to trick redux into thinking our reducer is valid
-        return 'test'
-    },
+    posts: postReducer,
 })
